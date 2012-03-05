@@ -18,20 +18,51 @@
  * @author Andres Almiray
  */
 class LookandfeelA03GriffonPlugin {
-    def version = 0.3
-    def griffonVersion = '0.9.2 > *'
-    def dependsOn = [lookandfeel: 0.5]
-    def toolkits = ['swing']
-    def license = 'Apache Software License 2.0'
+    // the plugin version
+    String version = '0.4'
+    // the version or versions of Griffon the plugin is designed for
+    String griffonVersion = '0.9.5 > *'
+    // the other plugins this plugin depends on
+    Map dependsOn = [lookandfeel: '0.6']
+    // resources that are included in plugin packaging
+    List pluginIncludes = []
+    // the plugin license
+    String license = 'Apache Software License 2.0'
+    // Toolkit compatibility. No value means compatible with all
+    // Valid values are: swing, javafx, swt, pivot, gtk
+    List toolkits = ['swing']
+    // Platform compatibility. No value means compatible with all
+    // Valid values are:
+    // linux, linux64, windows, windows64, macosx, macosx64, solaris
+    List platforms = []
+    // URL where documentation can be found
+    String documentation = ''
+    // URL where source can be found
+    String source = 'https://github.com/griffon/griffon-lookandfeel-a03-plugin'
 
-    def author = 'Andres Almiray'
-    def authorEmail = 'aalmiray@users.sourceforge.net'
-    def title = 'A03 Swing Look & Feel'
-    def description = '''
-A03 Swing Look & Feel.
+    List authors = [
+        [
+            name: 'Andres Almiray',
+            email: 'aalmiray@yahoo.com'
+        ]
+    ]
+    String title = 'Swing Look & Feel selector'
+    String description = '''
+Pluggable lookandfeel based on [A03][1].
+
+Usage
+-----
+
+Refer to the [lookandfeel][2] plugin to find out how setup `lookAndFeel` and `theme` properties in the configuration.
+
+LookAndFeel and Themes
+----------------------
+
+| *LookAndFeel* | *Theme* |
+| ------------- | --------|
+| A03           | A03     |
+
+[1]: http://www.davideraccagni.com/index.php?q=node/20
+[2]: /plugin/lookandfeel
 '''
-
-    // URL to the plugin's documentation
-    def documentation = 'http://griffon.codehaus.org/Lookandfeel+A03+Plugin'
 }
-
