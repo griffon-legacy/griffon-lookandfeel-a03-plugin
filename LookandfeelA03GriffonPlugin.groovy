@@ -46,9 +46,9 @@ class LookandfeelA03GriffonPlugin {
             email: 'aalmiray@yahoo.com'
         ]
     ]
-    String title = 'Swing Look & Feel selector'
+    String title = 'Pluggable Look & Feel based on A03'
     String description = '''
-Pluggable lookandfeel based on [A03][1].
+Pluggable Look & Feel based on [A03][1].
 
 Usage
 -----
@@ -59,7 +59,7 @@ LookAndFeel and Themes
 ----------------------
 
 | *LookAndFeel* | *Theme* |
-| ------------- | --------|
+| ------------- | ------- |
 | A03           | A03     |
 
 [1]: http://www.davideraccagni.com/index.php?q=node/20
